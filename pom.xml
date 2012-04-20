@@ -8,6 +8,20 @@
     <name>mongodb-maven-plugin Maven Mojo</name>
     <url>http://maven.apache.org</url>
 
+  <distributionManagement>
+    <repository>
+      <uniqueVersion>false</uniqueVersion>
+      <id>art01</id>
+      <name>art01-releases</name>
+      <url>http://art01.corp.pingidentity.com:8080/artifactory/inhouse</url>
+    </repository>
+    <snapshotRepository>
+      <id>art01</id>
+      <name>art01-snapshots</name>
+      <url>http://art01.corp.pingidentity.com:8080/artifactory/inhouse</url>
+    </snapshotRepository>
+  </distributionManagement>
+
     <dependencies>
         <dependency>
             <groupId>org.apache.maven</groupId>
